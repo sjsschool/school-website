@@ -1,0 +1,50 @@
+/* Body background */
+body {
+  background: rgb(255, 228, 193);
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin-inline: 5px;
+  margin-block: 50px;
+}
+
+/* Section styles */
+.main-container section {
+  width: 50%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .main-container section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container section img {
+    height: 400px;
+  }
+}
+
+/* Section content styles */
+.section-content {
+  text-align: center;
+  margin: auto;
+}
+
+.section-content h2 {
+  color: rgb(3, 43, 3);
+  font-size: 50px;
+}
+
+.section-content p {
+  color: rgb(2, 52, 26);
+  font-size: 20px;
+}
